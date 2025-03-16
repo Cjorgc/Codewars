@@ -192,4 +192,10 @@ public class AppTest
         assertEquals(0, SupermarketQueue.solveSuperMarketQueuee(new int[] {}, 1));
         assertEquals(113, SupermarketQueue.solveSuperMarketQueuee(new int[] {29, 18, 6, 23, 25, 29, 24, 17, 10, 8, 8, 22, 20, 16, 13, 17, 7, 21, 7, 11, 18, 26, 25, 1, 18, 29, 16, 26, 7, 11, 13, 20, 12, 6, 23, 3, 10, 9, 8, 5, 6, 18, 19, 26, 5, 15, 4, 15, 1, 4}, 7));
     }
+    @Test
+    public void camelCase(){
+        assertEquals( "Incorrect", "camel Casing", BreakCamelCase.camelCase("camelCasing"));
+        assertEquals( "Incorrect", "camel Casing Test", BreakCamelCase.camelCase("camelCasingTest"));
+        assertEquals( "Incorrect", "camelcasingtest", BreakCamelCase.camelCase("camelcasingtest"));
+    }
 }
